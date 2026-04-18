@@ -1,267 +1,269 @@
 # ============================================================================
 #
-# The configuration produced by default is meant to highlight the features
-# that Zensical provides and to serve as a starting point for your own
-# projects.
+# 默认生成的配置旨在突出 Zensical 提供的功能，
+# 并作为你自己的项目起点。
 #
 # ============================================================================
 
 [project]
 
-# The site_name is shown in the page header and the browser window title
+# site_name 会显示在页面头部和浏览器窗口标题中
 #
-# Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "Documentation"
+# 了解更多: https://zensical.org/docs/setup/basics/#site_name
+site_name = "MyZensical"
 
-# The site_description is included in the HTML head and should contain a
-# meaningful description of the site content for use by search engines.
+# site_description 会包含在 HTML 头部中，
+# 应该提供对站点内容有意义的描述，供搜索引擎使用。
 #
-# Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "A new project generated from the default template project."
+# 了解更多: https://zensical.org/docs/setup/basics/#site_description
+site_description = "这是一个使用 Zensical 构建的文档网站。"
 
-# The site_author attribute. This is used in the HTML head element.
+# site_author 属性。此项会用于 HTML 的 head 元素。
 #
-# Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "<your name here>"
+# 了解更多: https://zensical.org/docs/setup/basics/#site_author
+site_author = "PYPTsca"
 
-# The site_url is the canonical URL for your site. When building online
-# documentation you should set this.
-# Read more: https://zensical.org/docs/setup/basics/#site_url
-#site_url = "https://www.example.com/"
+# site_url 是你站点的规范 URL。构建在线文档时建议设置。
+# 了解更多: https://zensical.org/docs/setup/basics/#site_url
+site_url = "https://pyptscaZensical.github.io/"
 
-# The copyright notice appears in the page footer and can contain an HTML
-# fragment.
+# 版权声明会显示在页面页脚中，并且可以包含 HTML 片段。
 #
-# Read more: https://zensical.org/docs/setup/basics/#copyright
+# 了解更多: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
 Copyright &copy; 2026 The authors
 """
 
-# Zensical supports both implicit navigation and explicitly defined navigation.
-# If you decide not to define a navigation here then Zensical will simply
-# derive the navigation structure from the directory structure of your
-# "docs_dir". The definition below demonstrates how a navigation structure
-# can be defined using TOML syntax.
+# Zensical 同时支持隐式导航和显式定义导航。
+# 如果你决定不在这里定义导航，Zensical 会直接
+# 从你的 "docs_dir" 目录结构推导导航结构。
+# 下面的定义演示了如何使用 TOML 语法定义导航结构。
 #
-# Read more: https://zensical.org/docs/setup/navigation/
-# nav = [
-#   { "Get started" = "index.md" },
-#   { "Markdown in 5min" = "markdown.md" },
-# ]
+# 了解更多: https://zensical.org/docs/setup/navigation/
+nav = [
+  { "玩《魔法少女的魔女审判》艾玛有感" = "Emma.md" },
+  { "Zensical完全使用教程" = "zensical-Tutorial.md" },
+  { "Get started" = "index.md" },
+  { "Markdown in 5min" = "markdown.md" },
+]
 
-# With the "extra_css" option you can add your own CSS styling to customize
-# your Zensical project according to your needs. You can add any number of
-# CSS files.
+# 通过 "extra_css" 选项，你可以添加自己的 CSS 样式，
+# 以按需自定义你的 Zensical 项目。你可以添加任意数量的
+# CSS 文件。
 #
-# The path provided should be relative to the "docs_dir".
+# 提供的路径应相对于 "docs_dir"。
 #
-# Read more: https://zensical.org/docs/customization/#additional-css
+# 了解更多: https://zensical.org/docs/customization/#additional-css
 #
 #extra_css = ["stylesheets/extra.css"]
 
-# With the `extra_javascript` option you can add your own JavaScript to your
-# project to customize the behavior according to your needs.
+# 通过 `extra_javascript` 选项，你可以向项目添加自定义 JavaScript，
+# 以按需调整行为。
 #
-# The path provided should be relative to the "docs_dir".
+# 提供的路径应相对于 "docs_dir"。
 #
-# Read more: https://zensical.org/docs/customization/#additional-javascript
+# 了解更多: https://zensical.org/docs/customization/#additional-javascript
 #extra_javascript = ["javascripts/extra.js"]
 
 # ----------------------------------------------------------------------------
-# Section for configuring theme options
+# 用于配置主题选项的部分
 # ----------------------------------------------------------------------------
 [project.theme]
 
-# change this to "classic" to use the traditional Material for MkDocs look.
-#variant = "classic"
+# 将此项改为 "classic" 可使用传统的 Material for MkDocs 外观。
+variant = "modern"
 
-# Zensical allows you to override specific blocks, partials, or whole
-# templates as well as to define your own templates. To do this, uncomment
-# the custom_dir setting below and set it to a directory in which you
-# keep your template overrides.
+# Zensical 允许你覆盖特定区块、局部模板或整个模板，
+# 也支持定义你自己的模板。要这样做，请取消注释下面的
+# custom_dir 设置，并将其指向存放模板覆盖文件的目录。
 #
-# Read more:
+# 了解更多:
 # - https://zensical.org/docs/customization/#extending-the-theme
 #
 #custom_dir = "overrides"
 
-# With the "favicon" option you can set your own image to use as the icon
-# browsers will use in the browser title bar or tab bar. The path provided
-# must be relative to the "docs_dir".
+# 通过 "favicon" 选项，你可以设置自己的图片作为图标，
+# 浏览器会在标题栏或标签页中使用它。提供的路径
+# 必须相对于 "docs_dir"。
 #
-# Read more:
+# 了解更多:
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
 #favicon = "images/favicon.png"
 
-# Zensical supports more than 60 different languages. This means that the
-# labels and tooltips that Zensical's templates produce are translated.
-# The "language" option allows you to set the language used. This language
-# is also indicated in the HTML head element to help with accessibility
-# and guide search engines and translation tools.
+# Zensical 支持 60 多种语言。这意味着 Zensical 模板生成的
+# 标签和工具提示都可以被翻译。
+# "language" 选项允许你设置所用语言。该语言
+# 也会在 HTML 头部中标记，以帮助提升可访问性，
+# 并引导搜索引擎与翻译工具。
 #
-# The default language is "en" (English). It is possible to create
-# sites with multiple languages and configure a language selector. See
-# the documentation for details.
+# 默认语言是 "en"（英语）。你也可以创建
+# 多语言站点并配置语言选择器。详情请见文档。
 #
-# Read more:
+# 了解更多:
 # - https://zensical.org/docs/setup/language/
 #
-language = "en"
+language = "zh"
 
-# Zensical provides a number of feature toggles that change the behavior
-# of the documentation site.
+# Zensical 提供了多个功能开关，可改变文档站点的行为。
 features = [
-    # Zensical includes an announcement bar. This feature allows users to
-    # dismiss it when they have read the announcement.
-    # https://zensical.org/docs/setup/header/#announcement-bar
-    "announce.dismiss",
+  #"navigation.instant",          # 即时导航
+  #"navigation.instant.prefetch", # 预加载
+  #"navigation.tracking",         # 锚点跟踪
+  #"navigation.tabs",             # 导航标签
+  #"navigation.sections",         # 导航部分
+  #"navigation.expand",           # 展开导航
+  #"navigation.top",              # 返回顶部按钮
+  #"navigation.footer",           # 页脚导航
 
-    # If you have a repository configured and turn on this feature, Zensical
-    # will generate an edit button for the page. This works for common
-    # repository hosting services.
-    # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.edit",
+  # Zensical 包含公告栏。该功能允许用户在阅读公告后
+  # 将其关闭。
+  # https://zensical.org/docs/setup/header/#announcement-bar
+  "announce.dismiss",
 
-    # If you have a repository configured and turn on this feature, Zensical
-    # will generate a button that allows the user to view the Markdown
-    # code for the current page.
-    # https://zensical.org/docs/setup/repository/#content-actions
-    #"content.action.view",
+  # 如果你已配置代码仓库并启用该功能，Zensical
+  # 会为页面生成编辑按钮。适用于常见的
+  # 代码托管服务。
+  # https://zensical.org/docs/setup/repository/#content-actions
+  "content.action.edit",
 
-    # Code annotations allow you to add an icon with a tooltip to your
-    # code blocks to provide explanations at crucial points.
-    # https://zensical.org/docs/authoring/code-blocks/#code-annotations
-    "content.code.annotate",
+  # 如果你已配置代码仓库并启用该功能，Zensical
+  # 会生成一个按钮，允许用户查看当前页面的
+  # Markdown 源码。
+  # https://zensical.org/docs/setup/repository/#content-actions
+  #"content.action.view",
 
-    # This feature turns on a button in code blocks that allow users to
-    # copy the content to their clipboard without first selecting it.
-    # https://zensical.org/docs/authoring/code-blocks/#code-copy-button
-    "content.code.copy",
+  # 代码注释功能允许你在代码块中添加带提示的图标，
+  # 以解释关键位置。
+  # https://zensical.org/docs/authoring/code-blocks/#code-annotations
+  "content.code.annotate",
 
-    # Code blocks can include a button to allow for the selection of line
-    # ranges by the user.
-    # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
-    "content.code.select",
+  # 该功能会在代码块中启用复制按钮，用户无需先选中内容
+  # 即可复制到剪贴板。
+  # https://zensical.org/docs/authoring/code-blocks/#code-copy-button
+  "content.code.copy",
 
-    # Zensical can render footnotes as inline tooltips, so the user can read
-    # the footnote without leaving the context of the document.
-    # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
-    "content.footnote.tooltips",
+  # 代码块可包含一个按钮，允许用户选择行范围。
+  # https://zensical.org/docs/authoring/code-blocks/#code-selection-button
+  "content.code.select",
 
-    # If you have many content tabs that have the same titles (e.g., "Python",
-    # "JavaScript", "Cobol"), this feature causes all of them to switch to
-    # at the same time when the user chooses their language in one.
-    # https://zensical.org/docs/authoring/content-tabs/#linked-content-tabs
-    "content.tabs.link",
+  # Zensical 可以将脚注渲染为行内提示，用户无需离开
+  # 当前文档上下文即可阅读脚注。
+  # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
+  "content.footnote.tooltips",
 
-    # With this feature enabled users can add tooltips to links that will be
-    # displayed when the mouse pointer hovers the link.
-    # https://zensical.org/docs/authoring/tooltips/#improved-tooltips
-    "content.tooltips",
+  # 如果你有许多标题相同的内容标签页（例如 "Python"、
+  # "JavaScript"、"Cobol"），该功能会让它们在用户
+  # 切换其中一个时同步切换。
+  # https://zensical.org/docs/authoring/content-tabs/#linked-content-tabs
+  "content.tabs.link",
 
-    # With this feature enabled, Zensical will automatically hide parts
-    # of the header when the user scrolls past a certain point.
-    # https://zensical.org/docs/setup/header/#automatic-hiding
-    # "header.autohide",
+  # 启用此功能后，用户可以给链接添加工具提示，
+  # 当鼠标悬停时会显示。
+  # https://zensical.org/docs/authoring/tooltips/#improved-tooltips
+  "content.tooltips",
 
-    # Turn on this feature to expand all collapsible sections in the
-    # navigation sidebar by default.
-    # https://zensical.org/docs/setup/navigation/#navigation-expansion
-    # "navigation.expand",
+  # 启用此功能后，用户滚动超过一定位置时，
+  # Zensical 会自动隐藏页头的部分内容。
+  # https://zensical.org/docs/setup/header/#automatic-hiding
+  # "header.autohide",
 
-    # This feature turns on navigation elements in the footer that allow the
-    # user to navigate to a next or previous page.
-    # https://zensical.org/docs/setup/footer/#navigation
-    "navigation.footer",
+  # 启用该功能后，导航侧边栏中的所有可折叠分组
+  # 默认会展开。
+  # https://zensical.org/docs/setup/navigation/#navigation-expansion
+  # "navigation.expand",
 
-    # When section index pages are enabled, documents can be directly attached
-    # to sections, which is particularly useful for providing overview pages.
-    # https://zensical.org/docs/setup/navigation/#section-index-pages
-    "navigation.indexes",
+  # 该功能会在页脚启用导航元素，允许用户跳转到
+  # 上一页或下一页。
+  # https://zensical.org/docs/setup/footer/#navigation
+  "navigation.footer",
 
-    # When instant navigation is enabled, clicks on all internal links will be
-    # intercepted and dispatched via XHR without fully reloading the page.
-    # https://zensical.org/docs/setup/navigation/#instant-navigation
-    "navigation.instant",
+  # 启用分区索引页后，文档可以直接附加到分区，
+  # 这对提供概览页特别有用。
+  # https://zensical.org/docs/setup/navigation/#section-index-pages
+  "navigation.indexes",
 
-    # With instant prefetching, your site will start to fetch a page once the
-    # user hovers over a link. This will reduce the perceived loading time
-    # for the user.
-    # https://zensical.org/docs/setup/navigation/#instant-prefetching
-    "navigation.instant.prefetch",
+  # 启用即时导航后，所有内部链接点击都会被拦截，
+  # 并通过 XHR 分发，无需整页刷新。
+  # https://zensical.org/docs/setup/navigation/#instant-navigation
+  "navigation.instant",
 
-    # In order to provide a better user experience on slow connections when
-    # using instant navigation, a progress indicator can be enabled.
-    # https://zensical.org/docs/setup/navigation/#progress-indicator
-    #"navigation.instant.progress",
+  # 开启即时预取后，用户悬停链接时站点就会开始预取页面。
+  # 这会降低用户感知到的加载时间。
+  # https://zensical.org/docs/setup/navigation/#instant-prefetching
+  "navigation.instant.prefetch",
 
-    # When navigation paths are activated, a breadcrumb navigation is rendered
-    # above the title of each page
-    # https://zensical.org/docs/setup/navigation/#navigation-path
-    "navigation.path",
+  # 为了在慢速网络下使用即时导航时提供更好的体验，
+  # 可启用进度指示器。
+  # https://zensical.org/docs/setup/navigation/#progress-indicator
+  "navigation.instant.progress",
 
-    # When pruning is enabled, only the visible navigation items are included
-    # in the rendered HTML, reducing the size of the built site by 33% or more.
-    # https://zensical.org/docs/setup/navigation/#navigation-pruning
-    #"navigation.prune",
+  # 启用导航路径后，会在每个页面标题上方渲染面包屑导航。
+  # https://zensical.org/docs/setup/navigation/#navigation-path
+  "navigation.path",
 
-    # When sections are enabled, top-level sections are rendered as groups in
-    # the sidebar for viewports above 1220px, but remain as-is on mobile.
-    # https://zensical.org/docs/setup/navigation/#navigation-sections
-    "navigation.sections",
+  # 启用裁剪后，渲染的 HTML 中仅包含可见导航项，
+  # 可使构建后站点体积减少 33% 或更多。
+  # https://zensical.org/docs/setup/navigation/#navigation-pruning
+  #"navigation.prune",
 
-    # When tabs are enabled, top-level sections are rendered in a menu layer
-    # below the header for viewports above 1220px, but remain as-is on mobile.
-    # https://zensical.org/docs/setup/navigation/#navigation-tabs
-    #"navigation.tabs",
+  # 启用分区后，在宽度高于 1220px 的视口中，顶级分区会
+  # 作为分组渲染在侧边栏；在移动端则保持原样。
+  # https://zensical.org/docs/setup/navigation/#navigation-sections
+  "navigation.sections",
 
-    # When sticky tabs are enabled, navigation tabs will lock below the header
-    # and always remain visible when scrolling down.
-    # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
-    #"navigation.tabs.sticky",
+  # 启用标签页后，在宽度高于 1220px 的视口中，顶级分区会
+  # 渲染在页头下方的菜单层；在移动端则保持原样。
+  # https://zensical.org/docs/setup/navigation/#navigation-tabs
+  #"navigation.tabs",
 
-    # A back-to-top button can be shown when the user, after scrolling down,
-    # starts to scroll up again.
-    # https://zensical.org/docs/setup/navigation/#back-to-top-button
-    "navigation.top",
+  # 启用粘性标签页后，导航标签会固定在页头下方，
+  # 向下滚动时也始终可见。
+  # https://zensical.org/docs/setup/navigation/#sticky-navigation-tabs
+  #"navigation.tabs.sticky",
 
-    # When anchor tracking is enabled, the URL in the address bar is
-    # automatically updated with the active anchor as highlighted in the table
-    # of contents.
-    # https://zensical.org/docs/setup/navigation/#anchor-tracking
-    "navigation.tracking",
+  # 当用户向下滚动后再次向上滚动时，
+  # 可以显示返回顶部按钮。
+  # https://zensical.org/docs/setup/navigation/#back-to-top-button
+  "navigation.top",
 
-    # When search highlighting is enabled and a user clicks on a search result,
-    # Zensical will highlight all occurrences after following the link.
-    # https://zensical.org/docs/setup/search/#search-highlighting
-    "search.highlight",
+  # 启用锚点跟踪后，地址栏中的 URL 会自动更新为
+  # 目录中高亮的当前活动锚点。
+  # https://zensical.org/docs/setup/navigation/#anchor-tracking
+  "navigation.tracking",
 
-    # When anchor following for the table of contents is enabled, the sidebar
-    # is automatically scrolled so that the active anchor is always visible.
-    # https://zensical.org/docs/setup/navigation/#anchor-following
-    # "toc.follow",
+  # 启用搜索高亮后，用户点击搜索结果并进入页面时，
+  # Zensical 会高亮所有匹配项。
+  # https://zensical.org/docs/setup/search/#search-highlighting
+  "search.highlight",
 
-    # When navigation integration for the table of contents is enabled, it is
-    # always rendered as part of the navigation sidebar on the left.
-    # https://zensical.org/docs/setup/navigation/#navigation-integration
-    #"toc.integrate",
+  "search.suggest",               # 搜索建议
+
+  # 启用目录锚点跟随后，侧边栏会自动滚动，
+  # 使活动锚点始终可见。
+  # https://zensical.org/docs/setup/navigation/#anchor-following
+  # "toc.follow",
+
+  # 启用目录导航集成后，目录会始终作为左侧
+  # 导航栏的一部分渲染。
+  # https://zensical.org/docs/setup/navigation/#navigation-integration
+  #"toc.integrate",
 ]
 
 # ----------------------------------------------------------------------------
-# You can configure your own logo to be shown in the header using the "logo"
-# option in the "theme" subsection. The logo must be a relative path to a file
-# in your "docs_dir", e.g., to use `docs/assets/logo.png` you would set:
+# 你可以在 "theme" 子节中使用 "logo" 选项配置自定义 logo，
+# 使其显示在页头。logo 必须是 "docs_dir" 中某个文件的相对路径，
+# 例如要使用 `docs/assets/logo.png`，你可以这样设置：
 # ----------------------------------------------------------------------------
 #logo = "assets/logo.png"
 
 # ----------------------------------------------------------------------------
-# If you don't have a dedicated project logo, you can use a built-in icon from
-# the icon sets shipped in Zensical. Please note that the setting lives in a
-# different subsection, and that the above take precedence over the icon.
+# 如果你没有专门的项目 logo，可以使用 Zensical 自带图标集中的
+# 内置图标。请注意，该设置位于不同的子节中，
+# 并且上面的 logo 设置优先级高于图标设置。
 #
-# Read more:
+# 了解更多:
 # - https://zensical.org/docs/setup/logo-and-icons
 # - https://github.com/zensical/ui/tree/master/dist/.icons
 # ----------------------------------------------------------------------------
@@ -269,47 +271,53 @@ features = [
 #logo = "lucide/smile"
 
 # ----------------------------------------------------------------------------
-# In the "font" subsection you can configure the fonts used. By default, fonts
-# are loaded from Google Fonts, giving you a wide range of choices from a set
-# of suitably licensed fonts. There are options for a normal text font and for
-# a monospaced font used in code blocks.
+# 在 "font" 子节中你可以配置所使用的字体。默认情况下，字体
+# 从 Google Fonts 加载，可在一组适当授权的字体中进行广泛选择。
+# 你可以分别设置正文文本字体和代码块使用的等宽字体。
 # ----------------------------------------------------------------------------
 #[project.theme.font]
 #text = "Inter"
 #code = "Jetbrains Mono"
 
 # ----------------------------------------------------------------------------
-# In the "palette" subsection you can configure options for the color scheme.
-# You can configure different color schemes, e.g., to turn on dark mode,
-# that the user can switch between. Each color scheme can be further
-# customized.
+# 在 "palette" 子节中你可以配置配色方案相关选项。
+# 你可以设置多个不同配色方案（例如启用深色模式），
+# 供用户切换使用。每个配色方案都可进一步定制。
 #
-# Read more:
+# 了解更多:
 # - https://zensical.org/docs/setup/colors/
 # ----------------------------------------------------------------------------
+
+# 自动模式（跟随系统）
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle = { icon = "material/link", name = "关闭自动模式" }
+primary = "cyan"
+
 [[project.theme.palette]]
 scheme = "default"
 toggle.icon = "lucide/sun"
-toggle.name = "Switch to dark mode"
+toggle.name = "切换暗色模式"
+primary = "cyan"
 
 [[project.theme.palette]]
 scheme = "slate"
 toggle.icon = "lucide/moon"
-toggle.name = "Switch to light mode"
+toggle.name = "切换亮色模式"
+primary = "cyan"
 
 # ----------------------------------------------------------------------------
-# The "extra" section contains miscellaneous settings.
+# "extra" 区域包含杂项设置。
 # ----------------------------------------------------------------------------
 #[[project.extra.social]]
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
 
 # ----------------------------------------------------------------------------
-# In this section you can configure the Markdown extensions that are used when
-# rendering your documentation. We enable the most useful extensions by default,
-# but you can customize this list to your needs.
+# 在本节中，你可以配置渲染文档时使用的 Markdown 扩展。
+# 默认启用了最常用的扩展，但你可以按需自定义此列表。
 #
-# Read more:
+# 了解更多:
 # - https://zensical.org/docs/setup/extensions/
 # ----------------------------------------------------------------------------
 [project.markdown_extensions.abbr]
@@ -339,7 +347,7 @@ pygments_lang_class = true
 [project.markdown_extensions.pymdownx.smartsymbols]
 [project.markdown_extensions.pymdownx.superfences]
 custom_fences = [
-  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
 ]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
