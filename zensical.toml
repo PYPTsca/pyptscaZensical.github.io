@@ -25,7 +25,7 @@ site_author = "PYPTsca"
 
 # site_url 是你站点的规范 URL。构建在线文档时建议设置。
 # 了解更多: https://zensical.org/docs/setup/basics/#site_url
-site_url = "https://pyptscaZensical.github.io/"
+site_url = "pyptscaZensical.github.io"
 
 # 版权声明会显示在页面页脚中，并且可以包含 HTML 片段。
 #
