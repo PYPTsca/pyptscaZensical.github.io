@@ -238,7 +238,7 @@ features = [
   # https://zensical.org/docs/setup/search/#search-highlighting
   "search.highlight",
 
-  "search.suggest",               # 搜索建议
+  "search.suggest", # 搜索建议
 
   # 启用目录锚点跟随后，侧边栏会自动滚动，
   # 使活动锚点始终可见。
@@ -291,20 +291,23 @@ features = [
 # 自动模式（跟随系统）
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
-toggle = { icon = "material/link", name = "关闭自动模式" }
-primary = "cyan"
+toggle = { icon = "lucide/sun-moon", name = "关闭自动模式" }
 
+# 日间模式
 [[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
 scheme = "default"
-toggle.icon = "lucide/sun"
-toggle.name = "切换暗色模式"
-primary = "cyan"
+primary = "indigo"
+accent = "indigo"
+toggle = { icon = "lucide/sun", name = "切换至夜间模式" }
 
+# 夜间模式
 [[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
 scheme = "slate"
-toggle.icon = "lucide/moon"
-toggle.name = "切换亮色模式"
-primary = "cyan"
+primary = "indigo"
+accent = "indigo"
+toggle = { icon = "lucide/moon", name = "切换至日间模式" }
 
 # ----------------------------------------------------------------------------
 # "extra" 区域包含杂项设置。
